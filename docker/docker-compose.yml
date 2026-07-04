@@ -1,0 +1,20 @@
+name: hono
+services:
+  node:
+    container_name: node
+    build:
+      context: ./node
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - type: bind
+        source: ../
+        target: /app
+      - type: volume
+        source: codex-data
+        target: /root/.codex
+    tty: true
+
+volumes:
+  codex-data:

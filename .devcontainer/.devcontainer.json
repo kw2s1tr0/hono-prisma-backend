@@ -1,0 +1,6 @@
+{
+    "name": "bad backenc Dev Container",
+    "dockerComposeFile": "../docker/docker-compose.yml",
+    "workspaceFolder": "/app",
+    "service": "node"
+}
