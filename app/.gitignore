@@ -11,9 +11,20 @@
 # deps
 node_modules/
 
+# build
+dist/
+src/generated/prisma/
+
 # env
 .env
 .env.production
+
+# database
+*.db
+*.db.dev
+*.db-journal
+*.sqlite
+*.sqlite3
 
 # logs
 logs/
@@ -26,3 +37,9 @@ lerna-debug.log*
 
 # misc
 .DS_Store
+
+/prisma
+
+/src/generated/prisma
+
+/src/generated/prisma
